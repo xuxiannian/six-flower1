@@ -1,0 +1,43 @@
+/* pages/zhuan/zhuan.wxss */
+
+.x-button-3 {
+  line-height: 80px;
+  background-color: #009688;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  width: 80% !important;
+  height: 80%;
+  margin: 10px;
+}
+
+.x-button-4 {
+  line-height: 60px;
+  background-color: #009688;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  width: 80% !important;
+  height: 80%;
+  margin: 10px;
+}
+
+.x-button-7 {
+  line-height: 30px;
+  background-color: #009688;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  width: 80% !important;
+  height: 80%;
+  margin: 10px;
+}
+
+
+

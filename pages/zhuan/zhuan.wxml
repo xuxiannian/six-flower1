@@ -1,0 +1,27 @@
+<view class="container ">
+  <view class="x-card-header" wx:if="{{done}}" style="background-color: white;color: tomato;">
+    恭喜过关,总用时{{minute}}分{{second}}秒,获得了{{add}}朵小红花
+  </view>
+  <view wx:if="{{showNandu}}" style="width: 100%;">
+    <view class="x-card-header">请选择难度</view>
+    <view style="padding-top: 10px;width: 100%;">
+      <view class="x-3"><button class="x-button-3" data-w="4" data-h="4" bindtap="printTable">4*4</button></view>
+      <view class="x-3"><button class="x-button-3" data-w="7" data-h="7" bindtap="printTable">7*7</button></view>
+      <view class="x-3"><button class="x-button-3" data-w="7" data-h="10" bindtap="printTable">7*10</button></view>
+    </view>
+  </view>
+  <view wx:else style="width: 100%;">
+    <view class="x-card-header">当前难度为{{w}}*{{w}}</view>
+    <view class="x-card-header" wx:if="{{!done}}" style="background-color: white;color: tomato;">
+      点击【{{n}}】,已用时{{minute}}分{{second}}秒</view>
+
+    <view wx:if="{{!done}}" style="padding-top: 10px;width: 100%;">
+      <block wx:for="{{array}}" wx:key="{{index}}">
+        <view class="x-{{w}}"><button class="x-button-{{w}}"
+            style="{{item<n?'background-color:rgba(177, 171, 171, 0.45)':''}}" data-value="{{item}}"
+            bindtap="play">{{item}}</button>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

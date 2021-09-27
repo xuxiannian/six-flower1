@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="x-12">
+    <view class="x-card">
+      <view class="x-card-header">小红花</view>
+      <view class="x-card-body">
+        我已经获得了 <text style="font-size: 30px;color: rgb(255, 0, 0);"> {{num}}</text>个<image src="../image/h1.png"
+          style="width: 80px;height: 80px;"></image>
+      </view>
+
+    </view>
+  </view>
+  <view class="x-12" style="text-align: center;"><image src="../image/h2.png"
+          style="width: 80px;height: 80px;"></image><button bindtap="bindViewTap" class="x-button">专注力训练赢取小红花</button></view>
+  <view class="x-12">
+    <view class="x-card" style="min-height: 500px;">
+      <view class="x-card-body">
+        <view class="table">
+          <view class="tr bg-w">
+            <view class="th">日期</view>
+            <view class="th">时长</view>
+            <view class="th ">花朵</view>
+          </view>
+          <block wx:for="{{listData}}" wx:key="{[code]}">
+            <view class="tr bg">
+              <view class="td">{{item.data}}</view>
+              <view class="td">{{item.time}}</view>
+              <view class="td">{{item.num}}</view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+</view>
